@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Fredoka:wght@300..700&family=Protest+Guerrilla&display=swap');
+
+body,
+html {
+	background-color: #fff;
+	font-family: 'Inclusive Sans', serif;
+	overflow-x: hidden;
+	margin: 0rem;
+	padding: 0rem;
+	scroll-padding-top: 3rem;
+	scroll-behavior: smooth;
+}
+
+* {
+	text-decoration: none;
+	transition: all 0.2s ease-out;
+}
+
+.nav {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 5.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5rem 0rem;
+	background-color: #fff;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1);
+	/* border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px; */
+}
+
+/* Logo CSS Start */
+.nav .logo {
+	display: flex;
+}
+.nav .logo img {
+	width: 50px;
+	height: 50px;
+}
+
+.nav .logo .logoName {
+	font-size: 1.6rem;
+	/* font-weight: 600; */
+	font-family: 'Protest Guerrilla', Anta, Fredoka, 'Inclusive Sans', serif;
+	position: absolute;
+	top: 1.2rem;
+	left: 8.2rem;
+}
+/* Logo CSS end */
+
+.nav .navbar a {
+	margin-left: 1.6rem;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #000;
+}
+
+.nav .navbar a:hover {
+	color: #007bff;
+}
+.nav .navbar a.active {
+	color: #e0501b;
+}
+
+.nav .navbar .button {
+	/* padding: 8.5px 34px; */
+	margin-left: 65px;
+	display: inline-block;
+	padding: 10.5px 20px;
+	font-size: 0.8rem;
+	color: #000;
+	transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	text-transform: capitalize;
+	border: 1px solid #e4e6ea;
+	font-family: 'Inclusive Sans', serif;
+	border-radius: 5px;
+}
+
+.nav .button:hover {
+	background-color: #007bff;
+}
+
+.nav .navbar .button:hover {
+	color: #fff;
+}
+
+#menu-btn {
+	font-size: 2.5rem;
+	border-radius: 0.5rem;
+	background: #eee;
+	padding: 1rem 1.2rem;
+	cursor: pointer;
+	display: none;
+}
+
+/* Landing CSS */
+.landing {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 5rem 0rem 5rem;
+	height: 100vh;
+}
+
+.landingText {
+	flex-basis: 45%;
+}
+.landingImage {
+	flex-basis: 55%;
+}
+
+.landingText h1 {
+	font-size: 3rem;
+	margin: 0;
+}
+
+.landing span {
+	color: #2f8be0;
+	font-size: 3.2rem;
+}
+
+.landingText p {
+	margin: 0.3rem;
+	font-size: 1rem;
+	line-height: 1.8;
+	color: #777777;
+	font-weight: 600;
+	font-family: 'Inclusive Sans', serif;
+	padding-right: 1.2rem;
+}
+
+.landingText .btn {
+	display: inline-block;
+	width: 7rem;
+	margin-top: 2rem;
+	padding: 0.8rem 1.125rem 0.8rem 1.125rem;
+	/* padding: 14px 20px 12px 20px; */
+	background-color: #007bff;
+	border-radius: 45px;
+	text-align: center;
+}
+
+.landingText .btn a {
+	font-size: 1rem;
+	color: #fff;
+}
+
+.landingText .btn:hover {
+	background-color: #e0501b;
+	transition: all ease-in-out 0.2s;
+}
+.landingText .btn a:hover {
+	font-weight: 500;
+}
+
+.landingImage img {
+	width: 100%;
+}
+
+/* about CSS */
+.about {
+	/* height: 100vw; */
+	padding: 0rem 5rem 0rem 5rem;
+	display: flex;
+	/* flex-direction: row; */
+	justify-content: space-evenly;
+	align-items: center;
+	background: #f4f8fd;
+}
+
+.aboutText h1 {
+	font-size: 3rem;
+}
+
+.aboutText span {
+	color: #2f8be0;
+	font-size: 3.2rem;
+}
+
+ol {
+	list-style: none;
+	color: #e0501b;
+}
+
+ol li {
+	font-size: 2rem;
+	margin-bottom: 1.2rem;
+	border-bottom: 1px solid #ebebeb;
+}
+
+li p {
+	font-size: 1rem;
+	color: #000;
+	padding-left: 3.8rem;
+	line-height: 1.8rem;
+	opacity: 0.6;
+}
+
+li span {
+	font-weight: 600;
+}
+
+/* ----------- Services Section CSS ----------------- */
+.infoSection {
+	padding: 2rem 2rem 2rem;
+}
+
+.infoHeader {
+	text-align: center;
+	margin-bottom: 2.4rem;
+}
+
+.infoHeader h1 {
+	font-size: 3rem;
+}
+.infoSection .infoHeader span {
+	color: #2f8be0;
+	font-size: 3.2rem;
+}
+
+.infoCards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 5rem;
+	/* padding: 5rem; */
+}
+
+.infoCards .card {
+	height: 410px;
+	width: 360px;
+	background: #fff;
+	box-shadow: 0 10px 22px rgba(0, 0, 0, 0.09), 0 10px 10px rgba(0, 0, 0, 0.09);
+}
+
+.infoCards .cardImage {
+	width: 100px;
+	position: absolute;
+	top: -30px;
+	right: -30px;
+}
+
+.cardContent {
+	position: absolute;
+	top: 4rem;
+	padding: 0 1.2rem;
+}
+
+.cardContent span ul {
+	line-height: 30px;
+	opacity: 0.6;
+}
+.cardContent p {
+	line-height: 30px;
+	opacity: 0.6;
+}
+
+/* Google Maps CSS */
+.map {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5rem;
+}
+.google-map {
+	width: 45rem;
+	height: 20rem;
+	padding: 2rem 2rem 5rem;
+	box-shadow: 0 10px 22px rgba(0, 0, 0, 0.09), 0 10px 10px rgba(0, 0, 0, 0.09);
+	border: 2px solid #fff;
+}
+
+.google-map iframe {
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	border-radius: 6px;
+}
+
+/* Banner CSS */
+
+.banner {
+	background-color: #2f8be0;
+	display: flex;
+	flex-direction: row;
+	padding: 3.2rem;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.bannerFollow {
+	flex-basis: 1;
+}
+.bannerImg {
+	flex-basis: 2;
+}
+
+.bannerFollow h2 {
+	font-size: 3rem;
+	color: #000;
+	font-weight: 600;
+}
+.bannerFollow .bannerInnerText {
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+
+.bannerFollow img {
+	width: 4.5rem;
+	padding-top: 0.685rem;
+	margin-right: 1.2rem;
+}
+
+.bannerFollow img:hover {
+	transform: scale(1.2);
+	transition: all 0.3s ease-out;
+}
+
+.bannerImg img {
+	width: 80%;
+}
+.bannerFollow h3 {
+	font-size: 1.6rem;
+}
+
+.bannerInnerTextContact a {
+	font-size: 1rem;
+	font-weight: normal;
+	color: #000;
+	padding-right: 8px;
+}
+.bannerInnerTextContact a:hover {
+	color: #3072df;
+}
+.bannerInnerTextContact a:hover i {
+	padding-right: 1.8rem;
+	color: #3072df;
+	transition: all 0.3s ease-out;
+}
+
+.bannerInnerTextContact i {
+	color: #000;
+	padding-right: 8px;
+}
+
+/* Footer CSS */
+.footer {
+	height: 6.125rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 1.2rem;
+}
+
+.footerLinks a {
+	margin: 1.2rem;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #000;
+}
+
+.footer a:hover {
+	color: #007bff;
+}
+
+/* Footer Copyright */
+.copyrightFooter {
+	margin-top: 1rem;
+}
+#copyright {
+	text-align: center;
+	color: #212121;
+}
+
+/* ************************************************** */
+/* media queries */
+/* ************************************************** */
+@media (max-width: 1200px) {
+	.nav {
+		padding: 0 2rem 0rem;
+	}
+	.landing {
+		padding: 7rem 2rem 1.2rem;
+		height: auto;
+	}
+	.landingText h1 {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
+
+@media (max-width: 950px) {
+	#logoName-extend {
+		display: none;
+	}
+	.nav .logo .logoName {
+		left: 5rem;
+	}
+	.landing {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+	.about {
+		flex-direction: column;
+		padding: 2rem 2rem 0rem 0rem;
+		text-align: center;
+	}
+	.aboutList {
+		padding-top: 2rem;
+		margin: -2rem;
+	}
+	li p {
+		padding-left: 0rem;
+	}
+	.infoCards {
+		grid-gap: 5rem;
+		padding: 2rem;
+	}
+
+	.banner {
+		flex-direction: column-reverse;
+		justify-content: center;
+		text-align: center;
+	}
+	.bannerFollow {
+		flex-basis: auto;
+	}
+	.bannerImg {
+		flex-basis: auto;
+	}
+	.bannerImg img {
+		width: 60%;
+	}
+}
+
+@media (max-width: 800px) {
+	#navbar-btn {
+		display: none;
+	}
+	.infoCards {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		justify-content: center;
+		align-items: center;
+		/* text-align: center; */
+	}
+	.infoCards .card {
+		margin: 0rem 1rem;
+	}
+	/* 	.infoCards {
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+		align-items: center;
+	} */
+}
+
+@media only screen and (max-width: 600px) {
+	#menu-btn {
+		display: initial;
+		font-size: 1rem;
+	}
+	.nav .navbar .mainlink {
+		color: #000;
+	}
+	.nav .navbar {
+		position: absolute;
+		top: -50%;
+		left: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0.5rem 0;
+		width: 60%;
+		border: 0.2rem solid #a0a1a1;
+		border-top: 0.5rem solid #fff;
+		border-bottom: 0.5rem solid #fff;
+		background-color: #fff;
+		box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.3);
+		transform: scale(0) translate(-50%, -50%);
+		opacity: 0;
+		transform-origin: top left;
+		transition: none;
+	}
+
+	.nav .navbar.active {
+		transform: scale(1) translate(-50%, 50%);
+		opacity: 1;
+		transition: 0.2s ease-out;
+	}
+	.nav .navbar a {
+		font-size: 1.5rem;
+		display: block;
+		margin: 2rem;
+	}
+	.nav .logoName {
+		font-size: 1rem;
+	}
+	.aboutText img {
+		width: 80%;
+	}
+}
+
+@media (max-width: 450px) {
+	.nav {
+		padding: 0rem 1rem;
+	}
+	.nav .logo .logoName {
+		left: 4.1rem;
+	}
+	.landing {
+		padding: 6.5rem 1rem 3rem;
+	}
+	.landingText h1 {
+		font-size: 2.4rem;
+	}
+
+	.landing span {
+		font-size: 2.5rem;
+	}
+	.about {
+		padding: 2rem 1rem;
+	}
+	.aboutText h1 {
+		font-size: 2.4rem;
+	}
+
+	.aboutText span {
+		font-size: 2.5rem;
+	}
+	.aboutText img {
+		width: 100%;
+	}
+	.aboutList {
+		padding: 2rem 2rem 0rem 0rem;
+	}
+	.infoSection {
+		padding: 2rem 1rem;
+	}
+	.infoHeader h1 {
+		font-size: 2.4rem;
+		padding: 0rem 1rem;
+	}
+	.infoSection .infoHeader span {
+		font-size: 2.5rem;
+	}
+	.cardContent {
+		top: 3.5rem;
+		padding: 0 1rem;
+	}
+	.infoCards .card {
+		/* width: 19.8rem;
+		height: 29rem; */
+		width: 310px;
+		height: 460px;
+	}
+	.cardContent span ul {
+		line-height: 28px;
+	}
+	.cardContent p {
+		line-height: 28px;
+	}
+	.map {
+		margin-bottom: 2rem;
+	}
+	.google-map {
+		/* padding-bottom: 30%; */
+		width: 18rem;
+		height: 15rem;
+		margin-top: 3rem;
+		margin-bottom: 5rem;
+	}
+
+	.bannerFollow h2 {
+		font-size: 2rem;
+	}
+	.bannerFollow .bannerInnerText {
+		font-size: 1.2rem;
+	}
+	.bannerFollow img {
+		width: 3.5rem;
+		/* padding-top: 0.685rem; */
+		margin-right: 1rem;
+	}
+	.footerLinks a {
+		margin: 0.5rem;
+	}
+
+	/* Footer Copyright */
+	.copyrightFooter {
+		font-size: 0.7rem;
+	}
+}
+/* ******************************************************************** */
+/* ******************************************************************** */
+/* ******************************************************************** */
+/* ****************** Media Queries MaxiPharmaII ********************** */
