@@ -599,6 +599,13 @@ li span {
 	.copyrightFooter {
 		font-size: 0.7rem;
 	}
+	.copyrightFooter a {
+		color: #26a7d8;
+		text-decoration: none;
+	}
+	.copyrightFooter a:hover {
+		color: #30c5ff;
+	}
 }
 /* ******************************************************************** */
 /* ******************************************************************** */
