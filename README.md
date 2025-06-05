@@ -1,7 +1,7 @@
 # maxipharma-website
 
 
-<a href="https://webx-webify.netlify.app/" target="_blank">
+<a href="https://maxipharma.netlify.app/" target="_blank">
   <img src="/images/thumbnail.png"lt="Thumbnail"/>
 </a>
 
