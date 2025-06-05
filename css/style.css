@@ -630,6 +630,7 @@ li span {
 	.copyrightFooter {
 		font-size: 3vw;
 		color: #a1c4cf;
+		text-wrap: balance;
 	}
 }
 /* ******************************************************************** */
